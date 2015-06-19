@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "name": "Test Project",
+        "status": true,
+        "number_available_endpoints": 1,
+        "endpoints": [
+            {
+                "id": 1,
+                "name": "New Endpoint",
+                "endpoint_url": "www.test.com",
+                "project_id": 1,
+                "status": true,
+                "number_successful_requests": 1,
+                "requests": [
+                    {
+                        "id": 1,
+                        "name": "Test Request",
+                        "header": "Stuff",
+                        "body": "Things",
+                        "endpoint_id": 1,
+                        "status": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Another test project",
+        "status": false,
+        "number_available_endpoints": 0,
+        "endpoints": [
+            {
+                "id": 2,
+                "name": "Another endpoint",
+                "endpoint_url": null,
+                "project_id": 2,
+                "status": false,
+                "number_successful_requests": 0,
+                "requests": []
+            }
+        ]
+    }
+]

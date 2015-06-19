@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93E90D321B345CC800080F1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E90D311B345CC800080F1B /* main.m */; };
+		93E90D351B345CC800080F1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E90D341B345CC800080F1B /* AppDelegate.m */; };
+		93E90D3B1B345CC800080F1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E90D391B345CC800080F1B /* Main.storyboard */; };
+		93E90D3D1B345CC800080F1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93E90D3C1B345CC800080F1B /* Images.xcassets */; };
+		93E90D401B345CC800080F1B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93E90D3E1B345CC800080F1B /* LaunchScreen.xib */; };
+		93E90D4C1B345CC800080F1B /* CrowsNextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E90D4B1B345CC800080F1B /* CrowsNextTests.m */; };
+		93E90D5D1B345DBA00080F1B /* ProjectsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E90D5C1B345DBA00080F1B /* ProjectsTableViewController.m */; };
+		93E90D601B345DC800080F1B /* EndpointsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E90D5F1B345DC800080F1B /* EndpointsTableViewController.m */; };
+		93E90D631B345DD000080F1B /* AccountsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E90D621B345DD000080F1B /* AccountsTableViewController.m */; };
+		93E90D661B345E5E00080F1B /* DataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E90D651B345E5E00080F1B /* DataFetcher.m */; };
+		93E90D6C1B345F9F00080F1B /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E90D6B1B345F9F00080F1B /* Project.m */; };
+		93E90D6F1B345FA900080F1B /* Endpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E90D6E1B345FA900080F1B /* Endpoint.m */; };
+		93E90D791B3474D700080F1B /* CrowsNest.json in Resources */ = {isa = PBXBuildFile; fileRef = 93E90D781B3474D700080F1B /* CrowsNest.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93E90D461B345CC800080F1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93E90D241B345CC800080F1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93E90D2B1B345CC800080F1B;
+			remoteInfo = CrowsNext;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		93E90D2C1B345CC800080F1B /* CrowsNest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrowsNest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E90D301B345CC800080F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E90D311B345CC800080F1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93E90D331B345CC800080F1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		93E90D341B345CC800080F1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		93E90D3A1B345CC800080F1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93E90D3C1B345CC800080F1B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		93E90D3F1B345CC800080F1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		93E90D451B345CC800080F1B /* CrowsNestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrowsNestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E90D4A1B345CC800080F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E90D4B1B345CC800080F1B /* CrowsNextTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrowsNextTests.m; sourceTree = "<group>"; };
+		93E90D5B1B345DBA00080F1B /* ProjectsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsTableViewController.h; sourceTree = "<group>"; };
+		93E90D5C1B345DBA00080F1B /* ProjectsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsTableViewController.m; sourceTree = "<group>"; };
+		93E90D5E1B345DC800080F1B /* EndpointsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndpointsTableViewController.h; sourceTree = "<group>"; };
+		93E90D5F1B345DC800080F1B /* EndpointsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndpointsTableViewController.m; sourceTree = "<group>"; };
+		93E90D611B345DD000080F1B /* AccountsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountsTableViewController.h; sourceTree = "<group>"; };
+		93E90D621B345DD000080F1B /* AccountsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountsTableViewController.m; sourceTree = "<group>"; };
+		93E90D641B345E5E00080F1B /* DataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataFetcher.h; sourceTree = "<group>"; };
+		93E90D651B345E5E00080F1B /* DataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataFetcher.m; sourceTree = "<group>"; };
+		93E90D6A1B345F9F00080F1B /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
+		93E90D6B1B345F9F00080F1B /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
+		93E90D6D1B345FA900080F1B /* Endpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Endpoint.h; sourceTree = "<group>"; };
+		93E90D6E1B345FA900080F1B /* Endpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Endpoint.m; sourceTree = "<group>"; };
+		93E90D781B3474D700080F1B /* CrowsNest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CrowsNest.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93E90D291B345CC800080F1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E90D421B345CC800080F1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93E90D231B345CC800080F1B = {
+			isa = PBXGroup;
+			children = (
+				93E90D2E1B345CC800080F1B /* CrowsNext */,
+				93E90D481B345CC800080F1B /* CrowsNextTests */,
+				93E90D2D1B345CC800080F1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93E90D2D1B345CC800080F1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93E90D2C1B345CC800080F1B /* CrowsNest.app */,
+				93E90D451B345CC800080F1B /* CrowsNestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93E90D2E1B345CC800080F1B /* CrowsNext */ = {
+			isa = PBXGroup;
+			children = (
+				93E90D331B345CC800080F1B /* AppDelegate.h */,
+				93E90D341B345CC800080F1B /* AppDelegate.m */,
+				93E90D391B345CC800080F1B /* Main.storyboard */,
+				93E90D3C1B345CC800080F1B /* Images.xcassets */,
+				93E90D3E1B345CC800080F1B /* LaunchScreen.xib */,
+				93E90D2F1B345CC800080F1B /* Supporting Files */,
+				93E90D6A1B345F9F00080F1B /* Project.h */,
+				93E90D6B1B345F9F00080F1B /* Project.m */,
+				93E90D6D1B345FA900080F1B /* Endpoint.h */,
+				93E90D6E1B345FA900080F1B /* Endpoint.m */,
+				93E90D641B345E5E00080F1B /* DataFetcher.h */,
+				93E90D651B345E5E00080F1B /* DataFetcher.m */,
+				93E90D5B1B345DBA00080F1B /* ProjectsTableViewController.h */,
+				93E90D5C1B345DBA00080F1B /* ProjectsTableViewController.m */,
+				93E90D5E1B345DC800080F1B /* EndpointsTableViewController.h */,
+				93E90D5F1B345DC800080F1B /* EndpointsTableViewController.m */,
+				93E90D611B345DD000080F1B /* AccountsTableViewController.h */,
+				93E90D621B345DD000080F1B /* AccountsTableViewController.m */,
+				93E90D781B3474D700080F1B /* CrowsNest.json */,
+			);
+			path = CrowsNext;
+			sourceTree = "<group>";
+		};
+		93E90D2F1B345CC800080F1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93E90D301B345CC800080F1B /* Info.plist */,
+				93E90D311B345CC800080F1B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93E90D481B345CC800080F1B /* CrowsNextTests */ = {
+			isa = PBXGroup;
+			children = (
+				93E90D4B1B345CC800080F1B /* CrowsNextTests.m */,
+				93E90D491B345CC800080F1B /* Supporting Files */,
+			);
+			path = CrowsNextTests;
+			sourceTree = "<group>";
+		};
+		93E90D491B345CC800080F1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93E90D4A1B345CC800080F1B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93E90D2B1B345CC800080F1B /* CrowsNest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93E90D4F1B345CC800080F1B /* Build configuration list for PBXNativeTarget "CrowsNest" */;
+			buildPhases = (
+				93E90D281B345CC800080F1B /* Sources */,
+				93E90D291B345CC800080F1B /* Frameworks */,
+				93E90D2A1B345CC800080F1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrowsNest;
+			productName = CrowsNext;
+			productReference = 93E90D2C1B345CC800080F1B /* CrowsNest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93E90D441B345CC800080F1B /* CrowsNestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93E90D521B345CC800080F1B /* Build configuration list for PBXNativeTarget "CrowsNestTests" */;
+			buildPhases = (
+				93E90D411B345CC800080F1B /* Sources */,
+				93E90D421B345CC800080F1B /* Frameworks */,
+				93E90D431B345CC800080F1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93E90D471B345CC800080F1B /* PBXTargetDependency */,
+			);
+			name = CrowsNestTests;
+			productName = CrowsNextTests;
+			productReference = 93E90D451B345CC800080F1B /* CrowsNestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93E90D241B345CC800080F1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Solstice Mobile";
+				TargetAttributes = {
+					93E90D2B1B345CC800080F1B = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					93E90D441B345CC800080F1B = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 93E90D2B1B345CC800080F1B;
+					};
+				};
+			};
+			buildConfigurationList = 93E90D271B345CC800080F1B /* Build configuration list for PBXProject "CrowsNest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93E90D231B345CC800080F1B;
+			productRefGroup = 93E90D2D1B345CC800080F1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93E90D2B1B345CC800080F1B /* CrowsNest */,
+				93E90D441B345CC800080F1B /* CrowsNestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93E90D2A1B345CC800080F1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E90D3B1B345CC800080F1B /* Main.storyboard in Resources */,
+				93E90D401B345CC800080F1B /* LaunchScreen.xib in Resources */,
+				93E90D3D1B345CC800080F1B /* Images.xcassets in Resources */,
+				93E90D791B3474D700080F1B /* CrowsNest.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E90D431B345CC800080F1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93E90D281B345CC800080F1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E90D5D1B345DBA00080F1B /* ProjectsTableViewController.m in Sources */,
+				93E90D601B345DC800080F1B /* EndpointsTableViewController.m in Sources */,
+				93E90D351B345CC800080F1B /* AppDelegate.m in Sources */,
+				93E90D661B345E5E00080F1B /* DataFetcher.m in Sources */,
+				93E90D631B345DD000080F1B /* AccountsTableViewController.m in Sources */,
+				93E90D6F1B345FA900080F1B /* Endpoint.m in Sources */,
+				93E90D6C1B345F9F00080F1B /* Project.m in Sources */,
+				93E90D321B345CC800080F1B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E90D411B345CC800080F1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E90D4C1B345CC800080F1B /* CrowsNextTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93E90D471B345CC800080F1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93E90D2B1B345CC800080F1B /* CrowsNest */;
+			targetProxy = 93E90D461B345CC800080F1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93E90D391B345CC800080F1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93E90D3A1B345CC800080F1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93E90D3E1B345CC800080F1B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93E90D3F1B345CC800080F1B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93E90D4D1B345CC800080F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93E90D4E1B345CC800080F1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93E90D501B345CC800080F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CrowsNext/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = CrowsNest;
+			};
+			name = Debug;
+		};
+		93E90D511B345CC800080F1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CrowsNext/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = CrowsNest;
+			};
+			name = Release;
+		};
+		93E90D531B345CC800080F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CrowsNextTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = CrowsNestTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrowsNext.app/CrowsNext";
+			};
+			name = Debug;
+		};
+		93E90D541B345CC800080F1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CrowsNextTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = CrowsNestTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrowsNext.app/CrowsNext";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93E90D271B345CC800080F1B /* Build configuration list for PBXProject "CrowsNest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E90D4D1B345CC800080F1B /* Debug */,
+				93E90D4E1B345CC800080F1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93E90D4F1B345CC800080F1B /* Build configuration list for PBXNativeTarget "CrowsNest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E90D501B345CC800080F1B /* Debug */,
+				93E90D511B345CC800080F1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93E90D521B345CC800080F1B /* Build configuration list for PBXNativeTarget "CrowsNestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E90D531B345CC800080F1B /* Debug */,
+				93E90D541B345CC800080F1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93E90D241B345CC800080F1B /* Project object */;
+}
